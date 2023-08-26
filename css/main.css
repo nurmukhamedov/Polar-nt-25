@@ -142,4 +142,5 @@ button:hover {
 
 .sugar {
     background-color: var(--background-main-color);
+    color: black;
 }
