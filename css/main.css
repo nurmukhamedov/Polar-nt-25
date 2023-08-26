@@ -1,0 +1,145 @@
+@import './normalize.css';
+@import './fonts.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #D23166;
+    --background-main-color: #FBF0F4;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1125px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #FBF0F4;
+}
+
+nav {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__right {
+    display: flex;
+    align-items: center;
+    column-gap: 172px;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.navbar__menu-link {
+    font-size: 14px;
+    line-height: 16px;
+    color: #736767;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar__menu-link--active {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.navbar__menu-link:hover {
+    color: var(--primary-color);
+}
+
+button {
+    padding: 14px 50px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: 0.5s;
+    line-height: 22px;
+    font-size: 16px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 700;
+}
+
+button:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    background-color: #fff;
+}
+
+.hero {
+    margin-top: 83px;
+    height: 862px;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/ice-cream.png');
+    background-repeat: no-repeat;
+    background-position: 455px 120px;
+}
+
+.hero__content-subtitle {
+    color: #0F0101;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 10%;
+}
+
+.hero__content-title {
+    font-family: 'Fredoka One';
+    max-width: 665px;
+    width: 100%;
+    line-height: 69px;
+    font-size: 57.33px;
+    font-weight: 400;
+    margin-top: 6px;
+}
+
+.hero__content-title span {
+    color: var(--primary-color);
+}
+
+.hero__content-description {
+    max-width: 523px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Hind Madurai', sans-serif;
+    color: #736767;
+    line-height: 27px;
+    margin: 35px 0 50px 0;
+}
+
+.sugar {
+    background-color: var(--background-main-color);
+}
