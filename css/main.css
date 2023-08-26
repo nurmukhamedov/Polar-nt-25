@@ -144,3 +144,7 @@ button:hover {
     background-color: var(--background-main-color);
     color: black;
 }
+
+section {
+    width: 100%;
+}
